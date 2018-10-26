@@ -12,6 +12,10 @@ module.exports = function(env, argv) {
     output: {
       filename: 'bundle.js'
     },
+    devServer: {
+      contentBase: './dist',
+      hot: true
+    },
     module: {
       rules: [
         {
@@ -25,6 +29,7 @@ module.exports = function(env, argv) {
     },
     plugins: [
       new webpack.ProgressPlugin(),
+      new webpack.HotModuleReplacementPlugin(),
       new HtmlWebpackPlugin({template: path.resolve(__dirname, 'src/index.html')}),
       new MiniCssExtractPlugin({filename: 'bundle.css'})
     ]
