@@ -1,6 +1,71 @@
-/* */
-/* CREATE THIS FILE IN ./src/main.css */
-/* */
-body {
-    line-height: 2;
+.site-container {
+    position: relative;
+    height: 100%;
+}
+
+@keyframes sidebar-show {
+    from {width: 0px; padding: 0;}
+    to {width: 250px; padding: 1rem;}
+}
+
+@keyframes sidebar-hide {
+    from {width: 250px; padding: 1rem;}
+    to {width: 0px; padding: 0;}
+}
+
+/* ff5722 */
+#sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 100%;
+  z-index: 1035;
+  padding: 0;
+}
+
+#sidebar.show {
+  animation-name: sidebar-show;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+#sidebar.hide {
+  animation-name: sidebar-hide;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+#sidebar.sidebar-toggler {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.sidebar-navitems, .sidebar-header {
+  overflow: hidden;
+}
+
+#sidebar.sidebar-toggler a {
+  outline: 0 !important;
+  outline-offset: 0  !important;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  outline: 0 !important;
+  outline-offset: 0  !important;
+}
+
+.carounsal {
+  padding: 3.5rem;
+  padding-top: 6rem;
+  background-color: #e9ecef;
 }

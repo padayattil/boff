@@ -24,7 +24,29 @@ module.exports = function(env, argv) {
             isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader,
             'css-loader'
           ]
-        }
+        },
+        {
+          test: /\.(png|jpg|gif)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: path.join('images/[name].[ext]'),
+              }
+            }
+          ]
+        },
+        {
+          test: /\.(woff(2)?|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+          use: [
+            {
+              loader: 'url-loader',
+              options: {
+                name:'[name].[ext]',
+              }
+            }
+          ]
+        },
       ]
     },
     plugins: [
