@@ -1,3 +1,9 @@
+/*
+For Reference
+main color: #ff5722
+grey: #e9ecef
+*/
+
 .site-container {
     position: relative;
     height: 100%;
@@ -13,7 +19,6 @@
     to {width: 0px; padding: 0;}
 }
 
-/* ff5722 */
 #sidebar {
   position: absolute;
   top: 0;
@@ -61,11 +66,51 @@
   border: 0;
   padding: 0;
   outline: 0 !important;
-  outline-offset: 0  !important;
+  outline-offset: 0 !important;
 }
 
-.carounsal {
-  padding: 3.5rem;
-  padding-top: 6rem;
-  background-color: #e9ecef;
+#main-carousel {
+  height: 400;
+}
+
+.carousel-item img {
+  min-height: 400px;
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.transluscent-33 {
+  background-color: #00000054;
+}
+
+.transluscent-66 {
+  background-color: #000000a8;
+}
+
+.caption-limited {
+  overflow: hidden;
+}
+
+.carousel-caption.center {
+  position: absolute;
+  padding-top: 0;
+  top: 40%;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .carousel-caption span {
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
 }

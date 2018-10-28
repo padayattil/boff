@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'material-icons/iconfont/material-icons.css';
 
 import './images/logo.png';
+import './images/car-0.jpg';
+import './images/car-1.png';
+import './images/car-2.jpg';
 import './index.css';
 
 $(document).ready(function () {
