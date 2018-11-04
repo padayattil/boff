@@ -114,3 +114,59 @@ grey: #e9ecef
     font-weight: 300;
   }
 }
+
+.section-header {
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.section-header .col {
+  padding: 1em;
+}
+
+.section-header-left {
+  justify-content: flex-start;
+}
+
+.section-header-right {
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .section-header-left .col {
+    float: left;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-header-right .col {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+.section-body {
+  margin-top: 2em;
+}
+
+.section-artists .col {
+  background-color: #4768FD;
+}
+
+.section-movies .col {
+  background-color: #FF5722;
+}
+
+.section-schedule .col {
+  background-color: #FCD230;
+}
+
+.section-about .col {
+  background-color: #64EFCC;
+}
+
+.section-contact .col {
+  background-color: #303030;
+}
