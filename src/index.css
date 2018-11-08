@@ -148,6 +148,7 @@ grey: #e9ecef
 }
 
 .section-body {
+  min-width: 100%;
   margin-top: 2em;
 }
 
@@ -169,4 +170,47 @@ grey: #e9ecef
 
 .section-contact .col {
   background-color: #303030;
+}
+
+.infinite-scroller-container {
+  min-width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 1;
+  height: 20em;
+  overflow: hidden;
+}
+
+@keyframes infinite-scroller-scroll {
+    from {transform: translateX(0%);}
+    to {transform: translateX(100%);}
+}
+
+@keyframes infinite-scroller-fake-loop-scroll {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0%);}
+}
+
+.infinite-scroller {
+}
+
+.infinite-scroller-content {
+  width: 100%;
+  background-image: url('./images/artists.png');
+  background-size: cover;
+  display: flex;
+}
+
+.infinite-scroller:nth-child(1) {
+  animation-name: infinite-scroller-fake-loop-scroll;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.infinite-scroller:nth-child(2) {
+  animation-name: infinite-scroller-scroll;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
