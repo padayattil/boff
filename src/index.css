@@ -157,15 +157,19 @@ grey: #e9ecef
 }
 
 .section-movies .col {
-  background-color: #FF5722;
-}
-
-.section-schedule .col {
   background-color: #FCD230;
 }
 
-.section-about .col {
+.section-schedule .col {
   background-color: #64EFCC;
+}
+
+.section-news .col {
+  background-color: #28A745;
+}
+
+.section-about .col {
+  background-color: #FF5722;
 }
 
 .section-contact .col {
@@ -173,42 +177,28 @@ grey: #e9ecef
 }
 
 .infinite-scroller-container {
-  min-width: 100%;
-  display: flex;
+  flex-basis: 100%;
+  flex-grow: 0;
   flex-shrink: 0;
-  flex-grow: 1;
-  height: 20em;
+  display: flex;
+  flex-wrap: nowrap;
   overflow: hidden;
+  padding: 0;
 }
 
 @keyframes infinite-scroller-scroll {
-    from {transform: translateX(0%);}
-    to {transform: translateX(100%);}
-}
-
-@keyframes infinite-scroller-fake-loop-scroll {
     from {transform: translateX(-100%);}
     to {transform: translateX(0%);}
 }
 
-.infinite-scroller {
-}
-
 .infinite-scroller-content {
-  width: 100%;
+  flex-basis: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 30em;
   background-image: url('./images/artists.png');
   background-size: cover;
-  display: flex;
-}
-
-.infinite-scroller:nth-child(1) {
-  animation-name: infinite-scroller-fake-loop-scroll;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.infinite-scroller:nth-child(2) {
+  transform: translateX(-100%);
   animation-name: infinite-scroller-scroll;
   animation-duration: 10s;
   animation-timing-function: linear;
