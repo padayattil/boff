@@ -204,3 +204,44 @@ grey: #e9ecef
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+#schedule-tabs {
+  border: 0;
+}
+
+.schedule-tab-link {
+  font-size: 0.9em;
+}
+
+.schedule-tab-link.active {
+  border-bottom-width: 3px;
+  border-color: #00000000 !important;
+  border-bottom-color: #FF5722 !important;
+}
+
+.schedule-date-detail {
+  font-size: 2em;
+}
+
+.table.table-bordered td:first-child {
+  width: 30%;
+}
+
+.table.table-bordered td:first-child .time {
+  font-size: 2em;
+}
+
+.schedule-movie-name {
+  font-size: 1.5em;
+}
+
+
+@media screen and (max-width: 768px) {
+  .table.table-bordered td:first-child {
+    width: 35%;
+  }
+  .table.table-bordered td:first-child .time {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
