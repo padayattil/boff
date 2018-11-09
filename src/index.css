@@ -245,3 +245,94 @@ grey: #e9ecef
     font-weight: bold;
   }
 }
+
+.section-movies .col-md-4 {
+  margin-bottom: 1em;
+}
+
+.movie-item-image {
+  height: 15em;
+}
+
+.movie-item {
+  height: 20em;
+  flex-shrink: 1;
+  flex-grow: 0;
+  justify-content: flex-end;
+}
+
+.movie-item:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+}
+
+.movie-item-text-section {
+  flex-grow: 0;
+  flex-shrink: 1;
+  background-color: rgb(0,0,0, 0.8)
+}
+
+.movie-item-text-section .card-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.movie-0 {
+  background-image: url('./images/movie-a-feast.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.movie-1 {
+  background-image: url('./images/movie-ja-passou.jpg');
+  background-size: cover;
+}
+
+.movie-2 {
+  background-image: url('./images/movie-no-necesito.jpg');
+  background-size: cover;
+}
+
+.movie-3 {
+  background-image: url('./images/movie-my-escape.jpg');
+  background-size: cover;
+}
+
+.movie-4 {
+  background-image: url('./images/movie-2-57-k.jpg');
+  background-size: cover;
+}
+
+.movie-5 {
+  background-image: url('./images/movie-ortho.jpg');
+  background-size: cover;
+}
+
+.movie-6 {
+  background-image: url('./images/movie-big-love.jpg');
+  background-size: cover;
+}
+
+.movie-7 {
+  background-image: url('./images/movie-a-bomb.jpg');
+  background-size: cover;
+}
+
+.movie-8 {
+  background-image: url('./images/movie-circus.jpg');
+  background-size: cover;
+}
+
+.movie-9 {
+  background-image: url('./images/movie-done-deal.jpg');
+  background-size: cover;
+}
+
+.movie-10 {
+  background-image: url('./images/movie-little-things.jpg');
+  background-size: cover;
+}
+
+.movie-11 {
+  background-image: url('./images/movie-loft.png');
+  background-size: cover;
+}
