@@ -156,7 +156,7 @@ grey: #e9ecef
   background-color: #4768FD;
 }
 
-.section-movies .col {
+.section-films .col {
   background-color: #FCD230;
 }
 
@@ -231,7 +231,7 @@ grey: #e9ecef
   font-size: 2em;
 }
 
-.schedule-movie-name {
+.schedule-film-name {
   font-size: 1.5em;
 }
 
@@ -246,93 +246,93 @@ grey: #e9ecef
   }
 }
 
-.section-movies .col-md-4 {
+.section-films .col-md-4 {
   margin-bottom: 1em;
 }
 
-.movie-item-image {
+.film-item-image {
   height: 15em;
 }
 
-.movie-item {
+.film-item {
   height: 20em;
   flex-shrink: 1;
   flex-grow: 0;
   justify-content: flex-end;
 }
 
-.movie-item:hover {
+.film-item:hover {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
 }
 
-.movie-item-text-section {
+.film-item-text-section {
   flex-grow: 0;
   flex-shrink: 1;
   background-color: rgb(0,0,0, 0.8)
 }
 
-.movie-item-text-section .card-title {
+.film-item-text-section .card-title {
   font-weight: bold;
   margin-bottom: 0;
 }
 
-.movie-0 {
-  background-image: url('./images/movie-a-feast.jpg');
+.film-0 {
+  background-image: url('./images/film-a-feast.jpg');
   background-size: cover;
   background-position: center;
 }
 
-.movie-1 {
-  background-image: url('./images/movie-ja-passou.jpg');
+.film-1 {
+  background-image: url('./images/film-ja-passou.jpg');
   background-size: cover;
 }
 
-.movie-2 {
-  background-image: url('./images/movie-no-necesito.jpg');
+.film-2 {
+  background-image: url('./images/film-no-necesito.jpg');
   background-size: cover;
 }
 
-.movie-3 {
-  background-image: url('./images/movie-my-escape.jpg');
+.film-3 {
+  background-image: url('./images/film-my-escape.jpg');
   background-size: cover;
 }
 
-.movie-4 {
-  background-image: url('./images/movie-2-57-k.jpg');
+.film-4 {
+  background-image: url('./images/film-2-57-k.jpg');
   background-size: cover;
 }
 
-.movie-5 {
-  background-image: url('./images/movie-ortho.jpg');
+.film-5 {
+  background-image: url('./images/film-ortho.jpg');
   background-size: cover;
 }
 
-.movie-6 {
-  background-image: url('./images/movie-big-love.jpg');
+.film-6 {
+  background-image: url('./images/film-big-love.jpg');
   background-size: cover;
 }
 
-.movie-7 {
-  background-image: url('./images/movie-a-bomb.jpg');
+.film-7 {
+  background-image: url('./images/film-a-bomb.jpg');
   background-size: cover;
 }
 
-.movie-8 {
-  background-image: url('./images/movie-circus.jpg');
+.film-8 {
+  background-image: url('./images/film-circus.jpg');
   background-size: cover;
 }
 
-.movie-9 {
-  background-image: url('./images/movie-done-deal.jpg');
+.film-9 {
+  background-image: url('./images/film-done-deal.jpg');
   background-size: cover;
 }
 
-.movie-10 {
-  background-image: url('./images/movie-little-things.jpg');
+.film-10 {
+  background-image: url('./images/film-little-things.jpg');
   background-size: cover;
 }
 
-.movie-11 {
-  background-image: url('./images/movie-loft.png');
+.film-11 {
+  background-image: url('./images/film-loft.png');
   background-size: cover;
 }
