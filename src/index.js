@@ -7,6 +7,12 @@ import './images/logo.png';
 import './images/car-0.jpg';
 import './images/car-1.png';
 import './images/car-2.jpg';
+import './images/news-0.jpg';
+import './images/news-1.jpg';
+import './images/news-2.jpg';
+import './images/news-3.jpg';
+import './images/news-4.jpg';
+import './images/news-5.jpg';
 import './index.css';
 
 $(document).ready(function () {

@@ -337,6 +337,10 @@ grey: #e9ecef
   background-size: cover;
 }
 
+.news-item {
+  cursor: pointer;
+}
+
 .news-image {
   width: 100px;
   height: auto;
