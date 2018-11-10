@@ -336,3 +336,8 @@ grey: #e9ecef
   background-image: url('./images/film-loft.png');
   background-size: cover;
 }
+
+.news-image {
+  width: 100px;
+  height: auto;
+}
