@@ -172,8 +172,12 @@ grey: #e9ecef
   background-color: #FF5722;
 }
 
-.section-contact .col {
+.section-contact, .section-contact-info {
   background-color: #303030;
+}
+
+.section-contact-info .col p {
+  margin: 0;
 }
 
 .infinite-scroller-container {
