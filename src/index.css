@@ -172,8 +172,12 @@ grey: #e9ecef
   background-color: #FF5722;
 }
 
-.section-contact .col {
+.section-contact, .section-contact-info {
   background-color: #303030;
+}
+
+.section-contact-info .col p {
+  margin: 0;
 }
 
 .infinite-scroller-container {
@@ -335,4 +339,13 @@ grey: #e9ecef
 .film-11 {
   background-image: url('./images/film-loft.png');
   background-size: cover;
+}
+
+.news-item {
+  cursor: pointer;
+}
+
+.news-image {
+  width: 100px;
+  height: auto;
 }
