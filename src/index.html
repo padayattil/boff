@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
     <title>Brooklyn Outdoor Film Festival</title>
   </head>
   <body>
@@ -11,17 +12,15 @@
       You need to enable JavaScript to run this app.
     </noscript>
 
-    <div class="site-container">
-      <div id="sidebar" class="sticky-top shadow-sm mb-5 bg-white rounded">
-        <div class="sidebar-header border-bottom w-100 mw-100">
-          <a href="#" class="mw-100">
-            <img src="images/logo.png" alt="" class="mw-100">
-          </a>
-          <button class="sidebar-toggler border-0 bg-white float-right mw-100">
+    <div class="site-container w-100">
+      <div id="sidebar" class="shadow-sm bg-white rounded hide">
+        <div class="sidebar-header d-flex justify-content-between w-100 mw-100">
+          <div class="logo logo-icon"></div>
+          <button class="sidebar-toggler border-0 bg-white mw-100">
             <a href="#"><span class="material-icons text-secondary mw-100">keyboard_arrow_left</span></a>
           </button>
         </div>
-        <div class="sidebar-navitems w-100 mw-100">
+        <div class="sidebar-navitems mt-3 border-top w-100 mw-100">
           <ul class="mw-100 m-0 p-0 ">
             <li class="nav-item nav-item-home mw-100">
               <a class="nav-link mw-100" href="#">Home <span class="sr-only">(current)</span></a>
@@ -55,14 +54,13 @@
       </div><!-- /sidebar -->
 
       <div class="main-content">
-        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light shadow p-3 bg-white">
-          <div>
-            <button class="navbar-toggler sidebar-toggler" type="button">
-              <span class="material-icons text-secondary">menu</span>
-            </button>
-            <a class="navbar-brand collapse navbar-collapse" href="#">
-              <img src="images/logo.png" alt="">
-            </a>
+        <nav class="navbar fixed-top navbar-expand-md px-3 py-0 navbar-light shadow bg-white">
+          <button class="navbar-toggler sidebar-toggler" type="button">
+            <span class="material-icons text-secondary">menu</span>
+          </button>
+          <div class="h-100 navbar-brand-section d-flex align-items-center" href="#">
+            <div class="navbar-brand collapse navbar-collapse logo logo-icon"></div>
+            <div class="logo logo-text p-0"></div>
           </div>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
@@ -100,37 +98,50 @@
         <main role="main">
           <div class="container m-0 p-0 mw-100">
             <div class="row section-body section-home-body p-0 m-0">
-              <div class="col d-flex flex-column m-0 p-0">
+              <div class="col d-flex flex-column flex-nowrap h-100 m-0 p-0">
                 <div id="main-carousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#main-carousel" data-slide-to="1"></li>
-                      <li data-target="#main-carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner h-100">
-                      <div class="carousel-item h-100 active">
-                        <div class="carousel-caption-container">
-                          <div class="carousel-caption text-left">
-                            <h1 class="header">Brooklyn Outdoor Film Festival</h1>
-                            <p class="subtext display-4">5-8 | 5 | 2019</p>
-                          </div>
+                  <ol class="carousel-indicators">
+                    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-carousel" data-slide-to="1"></li>
+                    <li data-target="#main-carousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner h-100">
+                    <div class="carousel-item h-100 active">
+                      <div class="carousel-caption-container">
+                        <div class="carousel-caption text-left">
+                          <p class="header">Brooklyn Outdoor Film Festival</p>
+                          <p class="display-4">5-8 | 5 | 2019</p>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
                 <div id="boff-stats" class="d-flex flex-grow-1 text-white">
                   <div class="boff-stats-item d-flex flex-grow-1 text-left justify-content-center align-items-center">
-                    <div><p class="stats-main">5000</p><p class="stats-sub"><strong>bla bla</strong></p></div>
+                    <div>
+                      <p class="stats-sub m-0 p-0">Seating for 5000 movie lovers</p>
+                    </div>
                   </div>
                   <div class="boff-stats-item d-flex flex-grow-1 text-left justify-content-center align-items-center">
-                    <div><p class="stats-main">5000</p><p class="stats-sub"><strong>bla bla</strong></p></div>
+                    <div>
+                      <a href="http://www.brooklynohio.gov/en-US/city-news.aspx" target="_blank">
+                        <p class="stats-sub m-0 p-0">In the beautiful city of Brooklyn</p>
+                      </a>
+                    </div>
                   </div>
                   <div class="boff-stats-item d-flex flex-grow-1 text-left justify-content-center align-items-center">
-                    <div><p class="stats-main">5000</p><p class="stats-sub"><strong>bla bla</strong></p></div>
+                    <div>
+                      <p class="stats-sub m-0 p-0">Free and open to everyone</p>
+                    </div>
                   </div>
                   <div class="boff-stats-item d-flex flex-grow-1 text-left justify-content-center align-items-center">
-                    <div><p class="stats-main">5000</p><p class="stats-sub"><strong>bla bla</strong></p></div>
+                    <div>
+                      <a href="https://www.brooklynbridgepark.org/" target="_blank">
+                        <p class="stats-sub m-0 p-0">In association with Brooklyn Bridge Park</p>
+                      </a>
+                    </div>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -261,9 +272,9 @@
             <div class="row section-body mx-0">
               <div class="col">
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs flex-nowrap" id="schedule-tabs" role="tablist">
+                <ul class="nav nav-tabs flex-wrap" id="schedule-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link schedule-tab-link active" id="aug5-tab" data-toggle="tab" href="#aug5" role="tab" aria-controls="aug5" aria-selected="true">August 5</a>
+                    <a class="d-flex nav-link schedule-tab-link active" id="aug5-tab" data-toggle="tab" href="#aug5" role="tab" aria-controls="aug5" aria-selected="true">August 5</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link schedule-tab-link"  id="aug6-tab" data-toggle="tab" href="#aug6" role="tab" aria-controls="aug6" aria-selected="false">August 6</a>
