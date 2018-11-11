@@ -50,6 +50,10 @@ grey: #e9ecef
   overflow: hidden;
 }
 
+.sidebar-navitems .nav-item, .navbar .nav-item {
+  color: black !important;
+}
+
 #sidebar.sidebar-toggler a {
   outline: 0 !important;
   outline-offset: 0  !important;
@@ -60,6 +64,10 @@ grey: #e9ecef
   height: 4em;
   top: 0;
   left: 0;
+}
+
+.nav-item.active .nav-link {
+  color: #ff5722 !important;
 }
 
 .navbar-toggler {

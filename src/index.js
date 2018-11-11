@@ -30,4 +30,11 @@ $(document).ready(function () {
         });
     });
 
+    $('.sidebar-navitems .nav-item, .navbar .nav-item').on('click', function() {
+      $('.nav-item.active').toggleClass('active');
+      const navItemClass = `nav-item-${$($(this).children('a')[0]).attr('href').slice(1) || 'home'}`
+      console.log(navItemClass);
+      $('.'+navItemClass).toggleClass('active');
+    });
+
 });
