@@ -6,7 +6,6 @@ grey: #e9ecef
 
 .site-container {
     position: relative;
-    height: 100%;
 }
 
 @keyframes sidebar-show {
@@ -51,6 +50,10 @@ grey: #e9ecef
   overflow: hidden;
 }
 
+.sidebar-navitems .nav-item, .navbar .nav-item {
+  color: black !important;
+}
+
 #sidebar.sidebar-toggler a {
   outline: 0 !important;
   outline-offset: 0  !important;
@@ -58,8 +61,13 @@ grey: #e9ecef
 
 .navbar {
   position: fixed;
+  height: 4em;
   top: 0;
   left: 0;
+}
+
+.nav-item.active .nav-link {
+  color: #ff5722 !important;
 }
 
 .navbar-toggler {
@@ -69,23 +77,38 @@ grey: #e9ecef
   outline-offset: 0 !important;
 }
 
-#main-carousel {
-  height: 400;
+.section-home-body {
+  height: calc(100vh - 4em);
+  margin-top: 4em !important;
 }
 
-.carousel-item img {
-  min-height: 400px;
-  max-height: 400px;
-  width: 100%;
-  object-fit: cover;
+#main-carousel {
+  height: calc(100% - 8em);
 }
+
+#boff-stats {
+  background-color: #4D4D4D;
+}
+
+.stats-main {
+  font-size: 2em;
+}
+
+.carousel-item {
+}
+
+.carousel-item:nth-child(1){
+  background-image: url('./images/car.jpg');
+}
+
+
 
 .carousel-caption-container {
-  position: absolute;
-  top: 0;
+  /* position: absolute; */
+  /* top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0; */
 }
 
 .transluscent-33 {
@@ -99,21 +122,13 @@ grey: #e9ecef
 .caption-limited {
   overflow: hidden;
 }
-
-.carousel-caption.center {
-  position: absolute;
-  padding-top: 0;
-  top: 40%;
-  text-align: center;
-  margin: auto;
-}
-
+/*
 @media screen and (max-width: 992px) {
   .carousel-caption span {
     font-size: 2.2rem;
     font-weight: 300;
   }
-}
+} */
 
 .section-header {
   font-weight: 600;
@@ -149,7 +164,9 @@ grey: #e9ecef
 
 .section-body {
   min-width: 100%;
-  margin-top: 2em;
+  margin-top: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .section-artists .col {
@@ -348,4 +365,52 @@ grey: #e9ecef
 .news-image {
   width: 100px;
   height: auto;
+}
+
+.navbar-other {
+  overflow: hidden;
+}
+
+.btn-register {
+  line-height: 1.5em;
+  margin-left: 1em;
+}
+
+.fa {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  line-height: 2em;
+  width: 2em;
+  margin: 0em 0.25em 0em 0.25em;
+  background: #3B5CA0;
+}
+
+.fa-twitter {
+  line-height: 2em;
+  width: 2em;
+  margin: 0em 0.25em 0em 0.25em;
+  background: #4D89CA;
+  color: white;
+}
+
+.instagram {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  color: #fff;
+  line-height: 2em;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
