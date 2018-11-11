@@ -8,13 +8,28 @@ body {
   height: 100%;
 }
 
+.alert {
+  position: fixed;
+  top: 5em;
+  right: 1em;
+  z-index: 9999;
+}
+
 a, a:hover {
   text-decoration: none;
   color: inherit;
 }
 
+.box-shadow-red {
+  box-shadow: 0 0 5px red;
+}
+
 a:hover {
   color: #ff5722;
+}
+
+.btn:focus {
+  box-shadow: none;
 }
 
 .logo {
