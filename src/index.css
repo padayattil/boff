@@ -69,17 +69,31 @@ grey: #e9ecef
   outline-offset: 0 !important;
 }
 
-#main-carousel {
-  height: 400;
-  margin-top: 4em;
+.section-home-body {
+  height: calc(100vh - 4em);
+  margin-top: 4em !important;
 }
 
-.carousel-item img {
-  min-height: 400px;
-  max-height: 400px;
-  width: 100%;
-  object-fit: cover;
+#main-carousel {
+  height: calc(100% - 8em);
 }
+
+#boff-stats {
+  background-color: #4D4D4D;
+}
+
+.stats-main {
+  font-size: 2em;
+}
+
+.carousel-item {
+}
+
+.carousel-item:nth-child(1){
+  background-image: url('./images/car.jpg');
+}
+
+
 
 .carousel-caption-container {
   /* position: absolute; */
