@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
     <title>Brooklyn Outdoor Film Festival</title>
   </head>
   <body>
@@ -11,17 +12,78 @@
       You need to enable JavaScript to run this app.
     </noscript>
 
-    <div class="site-container">
-      <div id="sidebar" class="sticky-top shadow-sm mb-5 bg-white rounded">
-        <div class="sidebar-header border-bottom w-100 mw-100">
-          <a href="#" class="mw-100">
-            <img src="images/logo.png" alt="" class="mw-100">
-          </a>
-          <button class="sidebar-toggler border-0 bg-white float-right mw-100">
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Pre-register</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group d-flex justify-content-between">
+                <div>
+                  <label for="first-name" class="col-form-label">First Name<span class="text-danger">*</span>:</label>
+                  <input type="text" class="form-control" id="first-name">
+                </div>
+                <div>
+                  <label for="last-name" class="col-form-label">Last Name<span class="text-danger">*</span>:</label>
+                  <input type="text" class="form-control" id="last-name">
+                </div>
+              </div>
+              <div class="form-group d-flex justify-content-between">
+                <div>
+                  <label for="email" class="col-form-label">Email<span class="text-danger">*</span>:</label>
+                  <input type="text" class="form-control" id="email">
+                </div>
+                <div>
+                  <label for="phone" class="col-form-label">Phone<span class="text-danger">*</span>:</label>
+                  <input type="text" class="form-control" id="phone">
+                </div>
+              </div>
+              <label>Dates<span class="text-danger">*</span>:</label>
+              <div class="form-group d-flex justify-content-between align-items-center">
+                <div>
+                  <input class="d-inline" type="checkbox" class="form-control" id="aug5">
+                  <label class="d-inline" for="aug5" class="col-form-label">August 5</label>
+                </div>
+                <div>
+                  <input class="d-inline" type="checkbox" class="form-control" id="aug6">
+                  <label class="d-inline" for="aug6" class="col-form-label">August 6</label>
+                </div>
+                <div>
+                  <input class="d-inline" type="checkbox" class="form-control" id="aug7">
+                  <label class="d-inline" for="aug7" class="col-form-label">August 7</label>
+                </div>
+                <div>
+                  <input class="d-inline" type="checkbox" class="form-control" id="aug8">
+                  <label class="d-inline" for="aug8" class="col-form-label">August 8</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fade alert alert-success" role="alert">
+      Successfully Registered!
+    </div>
+
+    <div class="site-container w-100">
+      <div id="sidebar" class="shadow-sm bg-white rounded hide">
+        <div class="sidebar-header d-flex justify-content-between w-100 mw-100">
+          <a href="#"><div class="logo logo-icon"></div></a>
+          <button class="sidebar-toggler border-0 bg-white mw-100">
             <a href="#"><span class="material-icons text-secondary mw-100">keyboard_arrow_left</span></a>
           </button>
         </div>
-        <div class="sidebar-navitems w-100 mw-100">
+        <div class="sidebar-navitems mt-3 border-top w-100 mw-100">
           <ul class="mw-100 m-0 p-0 ">
             <li class="nav-item nav-item-home mw-100">
               <a class="nav-link mw-100" href="#">Home <span class="sr-only">(current)</span></a>
@@ -45,7 +107,7 @@
               <a class="nav-link mw-100" href="#contact">Contact</a>
             </li>
           </ul>
-          <button class="btn btn-outline-success my-2 my-sm-0 w-100 mw-100">Register</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 w-100 mw-100" data-toggle="modal" data-target="#registerModal">Register</button>
         </div>
         <div class="navbar-other d-flex align-items-center justify-content-around mt-4 py-4 border-top">
           <a href="https://www.twitter.com/" target="_blank" class="fa fa-twitter"></a>
@@ -55,14 +117,13 @@
       </div><!-- /sidebar -->
 
       <div class="main-content">
-        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light shadow p-3 bg-white">
-          <div>
-            <button class="navbar-toggler sidebar-toggler" type="button">
-              <span class="material-icons text-secondary">menu</span>
-            </button>
-            <a class="navbar-brand collapse navbar-collapse" href="#">
-              <img src="images/logo.png" alt="">
-            </a>
+        <nav class="navbar fixed-top navbar-expand-md px-3 py-0 navbar-light shadow bg-white">
+          <button class="navbar-toggler sidebar-toggler" type="button">
+            <span class="material-icons text-secondary">menu</span>
+          </button>
+          <div class="h-100 navbar-brand-section d-flex align-items-center" href="#">
+            <a href="#" class="d-block navbar-brand collapse navbar-collapse logo logo-icon"></a>
+            <a href="#" class="d-block logo logo-text p-0"></a>
           </div>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
@@ -92,7 +153,7 @@
               <a href="https://www.twitter.com/" target="_blank" class="fa fa-twitter"></a>
               <a href="https://www.instagram.com/" target="_blank" class="instagram"><span class="fa fa-instagram"></span></a>
               <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-              <button class="btn-register btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
+              <button class="btn-register btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#registerModal">Register</button>
             </div>
           </div>
         </nav>
@@ -100,37 +161,50 @@
         <main role="main">
           <div class="container m-0 p-0 mw-100">
             <div class="row section-body section-home-body p-0 m-0">
-              <div class="col d-flex flex-column m-0 p-0">
+              <div class="col d-flex flex-column flex-nowrap h-100 m-0 p-0">
                 <div id="main-carousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#main-carousel" data-slide-to="1"></li>
-                      <li data-target="#main-carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner h-100">
-                      <div class="carousel-item h-100 active">
-                        <div class="carousel-caption-container">
-                          <div class="carousel-caption text-left">
-                            <h1 class="header">Brooklyn Outdoor Film Festival</h1>
-                            <p class="subtext display-4">5-8 | 5 | 2019</p>
-                          </div>
+                  <ol class="carousel-indicators">
+                    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-carousel" data-slide-to="1"></li>
+                    <li data-target="#main-carousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner h-100">
+                    <div class="carousel-item h-100 active">
+                      <div class="carousel-caption-container">
+                        <div class="carousel-caption text-left">
+                          <p class="header">Brooklyn Outdoor Film Festival</p>
+                          <p class="display-4">05-08 | 08 | 2019</p>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
                 <div id="boff-stats" class="d-flex flex-grow-1 text-white">
                   <div class="boff-stats-item d-flex flex-grow-1 text-left justify-content-center align-items-center">
-                    <div><p class="stats-main">5000</p><p class="stats-sub"><strong>bla bla</strong></p></div>
+                    <div>
+                      <p class="stats-sub m-0 p-0">Seating for 5000 movie lovers</p>
+                    </div>
                   </div>
                   <div class="boff-stats-item d-flex flex-grow-1 text-left justify-content-center align-items-center">
-                    <div><p class="stats-main">5000</p><p class="stats-sub"><strong>bla bla</strong></p></div>
+                    <div>
+                      <a href="http://www.brooklynohio.gov/en-US/city-news.aspx" target="_blank">
+                        <p class="stats-sub m-0 p-0">In the beautiful city of Brooklyn</p>
+                      </a>
+                    </div>
                   </div>
                   <div class="boff-stats-item d-flex flex-grow-1 text-left justify-content-center align-items-center">
-                    <div><p class="stats-main">5000</p><p class="stats-sub"><strong>bla bla</strong></p></div>
+                    <div>
+                      <p class="stats-sub m-0 p-0">Free and open to everyone</p>
+                    </div>
                   </div>
                   <div class="boff-stats-item d-flex flex-grow-1 text-left justify-content-center align-items-center">
-                    <div><p class="stats-main">5000</p><p class="stats-sub"><strong>bla bla</strong></p></div>
+                    <div>
+                      <a href="https://www.brooklynbridgepark.org/" target="_blank">
+                        <p class="stats-sub m-0 p-0">In association with Brooklyn Bridge Park</p>
+                      </a>
+                    </div>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -261,9 +335,9 @@
             <div class="row section-body mx-0">
               <div class="col">
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs flex-nowrap" id="schedule-tabs" role="tablist">
+                <ul class="nav nav-tabs flex-wrap" id="schedule-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link schedule-tab-link active" id="aug5-tab" data-toggle="tab" href="#aug5" role="tab" aria-controls="aug5" aria-selected="true">August 5</a>
+                    <a class="d-flex nav-link schedule-tab-link active" id="aug5-tab" data-toggle="tab" href="#aug5" role="tab" aria-controls="aug5" aria-selected="true">August 5</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link schedule-tab-link"  id="aug6-tab" data-toggle="tab" href="#aug6" role="tab" aria-controls="aug6" aria-selected="false">August 6</a>
