@@ -30,11 +30,18 @@ $(document).ready(function () {
         });
     });
 
+    const navSection = window.location.hash.slice(1) || 'home';
+    activateNavItem(navSection);
+
     $('.sidebar-navitems .nav-item, .navbar .nav-item').on('click', function() {
-      $('.nav-item.active').toggleClass('active');
-      const navItemClass = `nav-item-${$($(this).children('a')[0]).attr('href').slice(1) || 'home'}`
-      console.log(navItemClass);
-      $('.'+navItemClass).toggleClass('active');
+      const navSection = $($(this).children('a')[0]).attr('href').slice(1) || 'home';
+      activateNavItem(navSection);
     });
 
 });
+
+const activateNavItem = function(navSection) {
+  const navItemClass = `nav-item-${navSection}`
+  $('.nav-item.active').toggleClass('active');
+  $('.'+navItemClass).toggleClass('active');
+}
