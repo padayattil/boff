@@ -128,7 +128,9 @@ a:hover {
   line-height: 100%;
 }
 
-.sidebar-header .sidebar-toggler a {
+.sidebar-toggler-icon, .sidebar-toggler-icon:focus, .sidebar-header button {
+  cursor: pointer;
+  box-shadow: none;
   outline: 0 !important;
   outline-offset: 0  !important;
 }
@@ -200,8 +202,17 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-.carousel-item:nth-child(1){
-  background-image: url('./images/car.jpg');
+.carousel-item:nth-child(2) {
+  background-image: url('./images/car-0.jpg');
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('./images/car-1.jpg');
+}
+
+.carousel-item:nth-child(4) {
+  color: #4D4D4D;
+  background-image: url('./images/car-2.jpg');
 }
 
 .transluscent-33 {
@@ -210,6 +221,13 @@ a:hover {
 
 .transluscent-66 {
   background-color: #000000a8;
+}
+
+.carousel-caption-container {
+  width: 100%;
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
 }
 
 .carousel-caption .header {
